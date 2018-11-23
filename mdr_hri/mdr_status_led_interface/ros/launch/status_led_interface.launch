@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="status_led_request_topic" default="/change_status_led" />
+    <arg name="status_led_topic" default="/light/change_status_led" />
+    <node pkg="mdr_status_led_interface" type="status_led_interface" name="mdr_status_led_interface" output="screen">
+        <remap from="status_led_request_topic" to="$(arg status_led_request_topic)" />
+        <remap from="status_led_topic" to="$(arg status_led_topic)" />
+    </node>
+</launch>

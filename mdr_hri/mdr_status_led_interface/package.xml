@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <name>mdr_status_led_interface</name>
+  <version>1.0.0</version>
+  <description>The mdr_status_led_interface package</description>
+
+  <license>GPLv3</license>
+
+  <author email="patrick.nagel@h-brs.de">Patrick Nagel</author>
+  <maintainer email="robotics@inf.h-brs.de">MAS robotics</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rospy</build_depend>
+  <run_depend>std_msgs</run_depend>
+</package>
